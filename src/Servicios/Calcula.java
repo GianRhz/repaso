@@ -6,12 +6,13 @@ public class Calcula {
     public String rutaMasRapida(String origen, String destino) {
     if (!origen.isEmpty() && !destino.isEmpty())
     	return "Ruta mas rapida entre " + origen + " y " + destino;
-    return "Ruta 1";
+    return "Ruta no valida";
     }
 
     public String rutaMasEconomica(String origen, String destino, double presupuesto) {
-    	
-    return "Ruta 2";
+    	if (presupuesto>0)
+        	return "Ruta mas economico entre " + origen + " y " + destino + " con presupuesto";
+        return "Sin presupuesto";
     }
 
     public String rutaConLugaresDeInteres(String origen, String destino, List<String> lugaresDeInteres) {
