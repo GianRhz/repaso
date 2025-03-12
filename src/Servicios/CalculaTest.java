@@ -15,18 +15,18 @@ class CalculaTest {
 
 	@Test
 	void testRutaMasRapida() {
-		String ruta = calcularuta.rutaMasRapida("Ventilla","Barrio del Pilar");
+		String ruta = Calcula.rutaMasRapida("Ventilla","Barrio del Pilar");
 		assertTrue(ruta.contains("Ventilla"));
 	}
 
 	@Test
 	void testRutaMasEconomica() {
-		fail("Not yet implemented");
+		assertEquals("Ruta no valida", Calcula.rutaMasEconomica("","Barrio del Pilar",100));
 	}
 
 	@Test
 	void testRutaConLugaresDeInteres() {
-		fail("Not yet implemented");
+		assertEquals("Ruta no valida", Calcula.rutaMasRapida("","Barrio del Pilar"));
 	}
 
 	@Test
